@@ -17,3 +17,10 @@ button.forEach((item) => {
 clearAll.addEventListener("click", () => {
   display_box.innerText = 0;
 });
+
+//clear last function
+
+clearLast.addEventListener("click", () => {
+  let str = display_box.innerText;
+  display_box.innerText = str.slice(0, -1);
+});
