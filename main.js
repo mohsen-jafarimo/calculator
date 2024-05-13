@@ -22,11 +22,12 @@ clearAll.addEventListener("click", () => {
 
 clearLast.addEventListener("click", () => {
   let str = display_box.innerText;
-  display_box.innerText = str.slice(0, -1);
+  display_box.innerText = str.slice(0, str.length - 1);
 });
 
 //result
 equalBtn.addEventListener("click", () => {
   let fNum = display_box.innerText;
-  display_box.innerHTML = eval(fNum.slice(0, -1));
+
+  display_box.innerHTML = eval(fNum);
 });
