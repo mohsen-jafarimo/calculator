@@ -4,5 +4,41 @@
   box-sizing: border-box;
 }
 body {
-  background-color: beige;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 50%;
+  width: 90vw;
+}
+.display_box {
+  color: #fff;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.key {
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #202020;
+  color: #fff;
+}
+.clear_all {
+  background-color: red;
+}
+.clear_last {
+  background-color: tomato;
+}
+.zero {
+  grid-column: 1/3;
 }
