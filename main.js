@@ -12,3 +12,8 @@ button.forEach((item) => {
     }
   });
 });
+
+//clear all function
+clearAll.addEventListener("click", () => {
+  display_box.innerText = 0;
+});
